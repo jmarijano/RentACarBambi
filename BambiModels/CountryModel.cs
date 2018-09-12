@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BambiModels
 {
-    public class Country
+    public class CountryModel
     {
         /// <summary>
         /// The unique identifier for the country.

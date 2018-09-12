@@ -6,22 +6,21 @@ using System.Threading.Tasks;
 
 namespace BambiModels
 {
-    public class Town
+    public class ModelOfProductionModel
     {
         /// <summary>
-        /// The unique identifier for the town.
+        /// The unique identifier for the model of production.
         /// </summary>
-        public string ZipCode { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
-        /// The name of the town.
+        /// The name of the model of production.
         /// </summary>
         public string Name { get; set; }
 
         /// <summary>
-        /// 
+        /// The manufacturer that builded model of production.
         /// </summary>
-        public CountryModel Country { get; set; }
-
+        public ManufacturerModel Manufacturer { get; set; }
     }
 }

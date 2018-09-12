@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BambiModels
 {
-   public class Employee
+   public class EmployeeModel
     {
         /// <summary>
         /// The unique identifier for the employee.
@@ -41,12 +41,12 @@ namespace BambiModels
         /// <summary>
         /// The education type that employee has.
         /// </summary>
-        public EducationType EducationType { get; set; }
+        public EducationTypeModel EducationType { get; set; }
 
         /// <summary>
         /// The profession that employee has.
         /// </summary>
-        public Profession Profession { get; set; }
+        public ProfessionModel Profession { get; set; }
 
         /// <summary>
         /// The birth date of the employee.
@@ -86,7 +86,7 @@ namespace BambiModels
         /// <summary>
         /// The type of employee.
         /// </summary>
-        public EmployeeType EmployeeType { get; set; }
+        public EmployeeTypeModel EmployeeType { get; set; }
 
         /// <summary>
         /// The username for the employee.

@@ -6,22 +6,16 @@ using System.Threading.Tasks;
 
 namespace BambiModels
 {
-    public class Town
+    public class EngineTypeModel
     {
         /// <summary>
-        /// The unique identifier for the town.
+        /// The unique identifier for the engine type.
         /// </summary>
-        public string ZipCode { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
-        /// The name of the town.
+        /// The name of the engine type.
         /// </summary>
         public string Name { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public CountryModel Country { get; set; }
-
     }
 }

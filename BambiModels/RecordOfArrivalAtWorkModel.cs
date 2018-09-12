@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BambiModels
 {
-    public class RecordOfArrivalAtWork
+    public class RecordOfArrivalAtWorkModel
     {
         /// <summary>
         /// The unique identifier for the record
@@ -27,6 +27,6 @@ namespace BambiModels
         /// <summary>
         /// The employee for which the record is created.
         /// </summary>
-        public Employee Employee { get; set; }
+        public EmployeeModel Employee { get; set; }
     }
 }

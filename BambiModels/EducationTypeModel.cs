@@ -1,6 +1,6 @@
 ﻿namespace BambiModels
 {
-    public class EducationType
+    public class EducationTypeModel
     {
         /// <summary>
         /// The unique identifier for the education type.

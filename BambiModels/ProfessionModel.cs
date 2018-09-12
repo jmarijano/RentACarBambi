@@ -1,14 +1,14 @@
 ﻿namespace BambiModels
 {
-    public class EmployeeType
+    public class ProfessionModel
     {
         /// <summary>
-        /// The unique identifier for the employee type.
+        /// The unique identifier for the profession.
         /// </summary>
         public int Id { get; set; }
 
         /// <summary>
-        /// The name of employee type.
+        /// The name of the profession.
         /// </summary>
         public string Name { get; set; }
     }

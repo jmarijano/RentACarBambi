@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BambiModels
 {
-    public class Drive
+    public class DriveModel
     {
         private int _id;
         private string _name;

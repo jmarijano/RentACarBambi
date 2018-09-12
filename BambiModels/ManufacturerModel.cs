@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace BambiModels
 {
-    public class EngineType
+    public class ManufacturerModel
     {
         /// <summary>
-        /// The unique identifier for the engine type.
+        /// The unique identifier for the manufacturer.
         /// </summary>
         public int Id { get; set; }
 
         /// <summary>
-        /// The name of the engine type.
+        /// The name of the manufacturer.
         /// </summary>
         public string Name { get; set; }
     }

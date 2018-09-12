@@ -6,22 +6,21 @@ using System.Threading.Tasks;
 
 namespace BambiModels
 {
-    public class Town
+    public class InsuranceCompanyModel
     {
         /// <summary>
-        /// The unique identifier for the town.
+        /// The unique identifier for the insurance company.
         /// </summary>
-        public string ZipCode { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
-        /// The name of the town.
+        /// The name of the insurance company.
         /// </summary>
         public string Name { get; set; }
 
         /// <summary>
-        /// 
+        /// The e - mail address of the insurance company.
         /// </summary>
-        public CountryModel Country { get; set; }
-
+        public string Email { get; set; }
     }
 }

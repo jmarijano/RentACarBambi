@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BambiUI", "BambiUI\BambiUI.csproj", "{E3D42F82-DB7E-4877-9E52-4C3B66DFE930}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BambiModels", "BambiModels\BambiModels.csproj", "{FF16B7E5-F0B6-4D88-AC7E-2800FCE158C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E3D42F82-DB7E-4877-9E52-4C3B66DFE930}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3D42F82-DB7E-4877-9E52-4C3B66DFE930}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3D42F82-DB7E-4877-9E52-4C3B66DFE930}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF16B7E5-F0B6-4D88-AC7E-2800FCE158C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF16B7E5-F0B6-4D88-AC7E-2800FCE158C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF16B7E5-F0B6-4D88-AC7E-2800FCE158C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF16B7E5-F0B6-4D88-AC7E-2800FCE158C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
