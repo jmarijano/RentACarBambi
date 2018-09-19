@@ -41,12 +41,12 @@ namespace BambiModels
         /// <summary>
         /// The education type that employee has.
         /// </summary>
-        public EducationTypeModel EducationType { get; set; }
+        public int EducationTypeId { get; set; }
 
         /// <summary>
         /// The profession that employee has.
         /// </summary>
-        public ProfessionModel Profession { get; set; }
+        public int ProfessionId { get; set; }
 
         /// <summary>
         /// The birth date of the employee.
@@ -66,7 +66,7 @@ namespace BambiModels
         /// <summary>
         /// The town in which employee lives.
         /// </summary>
-        public Town Town { get; set; }
+        public string TownZipCode { get; set; }
 
         /// <summary>
         /// The address of employees home.
@@ -86,7 +86,7 @@ namespace BambiModels
         /// <summary>
         /// The type of employee.
         /// </summary>
-        public EmployeeTypeModel EmployeeType { get; set; }
+        public int EmployeeTypeId { get; set; }
 
         /// <summary>
         /// The username for the employee.

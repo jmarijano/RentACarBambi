@@ -27,6 +27,6 @@ namespace BambiModels
         /// <summary>
         /// The employee for which the record is created.
         /// </summary>
-        public EmployeeModel Employee { get; set; }
+        public string EmployeeId { get; set; }
     }
 }

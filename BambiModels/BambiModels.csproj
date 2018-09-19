@@ -41,9 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BillModel.cs" />
     <Compile Include="CarModel.cs" />
     <Compile Include="ClassModel.cs" />
     <Compile Include="CountryModel.cs" />
+    <Compile Include="CustomerFeedbackModel.cs" />
+    <Compile Include="CustomerModel.cs" />
+    <Compile Include="DiscountModel.cs" />
     <Compile Include="DriveModel.cs" />
     <Compile Include="EducationTypeModel.cs" />
     <Compile Include="EmployeeModel.cs" />
@@ -53,10 +57,12 @@
     <Compile Include="InsuranceCompanyModel.cs" />
     <Compile Include="ManufacturerModel.cs" />
     <Compile Include="ModelOfProductionModel.cs" />
+    <Compile Include="PaymentMethodModel.cs" />
     <Compile Include="ProfessionModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecordOfArrivalAtWorkModel.cs" />
-    <Compile Include="Town.cs" />
+    <Compile Include="ReservationModel.cs" />
+    <Compile Include="TownModel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

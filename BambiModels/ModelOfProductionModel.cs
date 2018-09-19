@@ -21,6 +21,6 @@ namespace BambiModels
         /// <summary>
         /// The manufacturer that builded model of production.
         /// </summary>
-        public ManufacturerModel Manufacturer { get; set; }
+        public int ManufacturerId { get; set; }
     }
 }

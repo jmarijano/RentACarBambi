@@ -17,11 +17,11 @@ namespace BambiModels
         /// The town on which insurancy company has building.
         /// 
         /// </summary>
-        public Town Town { get; set; }
+        public string TownZipCode { get; set; }
 
         /// <summary>
         /// The insurance company.
         /// </summary>
-        public InsuranceCompanyModel InsuranceCompany { get; set; }
+        public int InsuranceCompanyId { get; set; }
     }
 }

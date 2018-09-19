@@ -18,15 +18,13 @@ namespace BambiModels
 
         public DateTime DateOfPurchase { get; set; }
 
-        public int MyProperty { get; set; }
+        public int ModelOfProductionId { get; set; }
 
-        public ModelOfProductionModel ModelOfProduction { get; set; }
+        public int ClassId { get; set; }
 
-        public ClassModel Class { get; set; }
+        public int InsuranceId { get; set; }
 
-        public InsuranceCompanyModel Insurance { get; set; }
-
-        public DriveModel Drive { get; set; }
+        public int DriveId { get; set; }
 
         public int DistanceDriven { get; set; }
 
@@ -34,7 +32,7 @@ namespace BambiModels
 
         public DateTime YearOfManufacture { get; set; }
 
-        public EngineTypeModel EngineType { get; set; }
+        public int EngineTypeId { get; set; }
 
         public int Power { get; set; }
 

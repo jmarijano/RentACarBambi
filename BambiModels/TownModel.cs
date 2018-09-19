@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BambiModels
 {
-    public class Town
+    public class TownModel
     {
         /// <summary>
         /// The unique identifier for the town.
@@ -21,7 +21,7 @@ namespace BambiModels
         /// <summary>
         /// 
         /// </summary>
-        public CountryModel Country { get; set; }
+        public int CountryId { get; set; }
 
     }
 }
