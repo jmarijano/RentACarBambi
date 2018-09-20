@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BambiFactory", "BambiFactor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BambiSQLServerDataAccess", "BambiSQLServerDataAccess\BambiSQLServerDataAccess.csproj", "{43E9FF42-1C3A-4785-8243-710CE51B5C02}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BambiUnitTest", "BambiUnitTest\BambiUnitTest.csproj", "{76CD3333-0C58-48F7-88E8-5D9E333B9A98}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{43E9FF42-1C3A-4785-8243-710CE51B5C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43E9FF42-1C3A-4785-8243-710CE51B5C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43E9FF42-1C3A-4785-8243-710CE51B5C02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76CD3333-0C58-48F7-88E8-5D9E333B9A98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76CD3333-0C58-48F7-88E8-5D9E333B9A98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76CD3333-0C58-48F7-88E8-5D9E333B9A98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76CD3333-0C58-48F7-88E8-5D9E333B9A98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

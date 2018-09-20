@@ -21,12 +21,28 @@ namespace BambiSQLServerDataAccess
         {
             _connection = connection.CreateConnection();
         }
+
+        public void Delete(ManufacturerModel model)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<ManufacturerModel> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
         public void Insert(ManufacturerModel manufacturer)
         {
             using (_connection)
             {
                 _connection.Query<ManufacturerModel>("SELECT * FROM Manufacturer");
             }
+        }
+
+        public void Update(ManufacturerModel model)
+        {
+            throw new NotImplementedException();
         }
     }
 }
