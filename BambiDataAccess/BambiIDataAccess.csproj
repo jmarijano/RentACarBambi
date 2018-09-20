@@ -50,6 +50,7 @@
     <Compile Include="IDriveRepository.cs" />
     <Compile Include="IEducationTypeRepository.cs" />
     <Compile Include="IEmployeeRepository.cs" />
+    <Compile Include="IEmployeeTypeRepository.cs" />
     <Compile Include="IEngineTypeRepository.cs" />
     <Compile Include="IInsuranceCompanyLocationRepository.cs" />
     <Compile Include="IInsuranceCompanyRepository.cs" />
