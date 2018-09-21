@@ -44,9 +44,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BillSQLServerDataAccess.cs" />
+    <Compile Include="CarSQLServerDataAccess.cs" />
+    <Compile Include="ClassSQLServerDataAccess.cs" />
+    <Compile Include="CountrySQLServerDataAccess.cs" />
+    <Compile Include="CustomerFeedbackSQLServerDataAccess.cs" />
+    <Compile Include="CustomerSQLServerDataAccess.cs" />
+    <Compile Include="DiscountSQLServerDataAccess.cs" />
+    <Compile Include="DriveSQLServerDataAccess.cs" />
+    <Compile Include="EducationTypeSQLServerDataAccess.cs" />
+    <Compile Include="EmployeeSQLServerDataAccess.cs" />
     <Compile Include="EmployeeTypeSQLServerDataAccess.cs" />
+    <Compile Include="EngineTypeSQLServerDataAccess.cs" />
+    <Compile Include="InsuranceCompanyLocationSQLServerDataAccess.cs" />
+    <Compile Include="InsuranceCompanySQLServerDataAccess.cs" />
     <Compile Include="ManufacturerSQLServerDataAccess.cs" />
+    <Compile Include="ModelOfProductionSQLServerDataAccess.cs" />
+    <Compile Include="PaymentMethodSQLServerDataAccess.cs" />
+    <Compile Include="ProfessionSQLServerDataAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecordOfArrivalAtWorkSQLServerDataAccess.cs" />
+    <Compile Include="ReservationSQLServerDataAccess.cs" />
+    <Compile Include="TownSQLServerDataAccess.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BambiDataAccess\BambiIDataAccess.csproj">

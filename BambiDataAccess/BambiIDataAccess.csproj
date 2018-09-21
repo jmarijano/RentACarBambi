@@ -46,6 +46,7 @@
     <Compile Include="IClassRepository.cs" />
     <Compile Include="ICountryRepository.cs" />
     <Compile Include="ICustomerFeedbackRepository.cs" />
+    <Compile Include="ICustomerRepository.cs" />
     <Compile Include="IDiscountRepository.cs" />
     <Compile Include="IDriveRepository.cs" />
     <Compile Include="IEducationTypeRepository.cs" />
