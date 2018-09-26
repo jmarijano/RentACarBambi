@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BambiIBusinessLogic
 {
-    public interface IEducationBusinessLogic
+    public interface IEducationTypeBusinessLogic
     {
     }
 }
