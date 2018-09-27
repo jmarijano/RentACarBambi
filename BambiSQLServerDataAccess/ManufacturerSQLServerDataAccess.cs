@@ -22,27 +22,41 @@ namespace BambiSQLServerDataAccess
             _connection = connection.CreateConnection();
         }
 
-        public void Delete(ManufacturerModel model)
+        public int Delete(ManufacturerModel manufacturer)
         {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<ManufacturerModel> GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Insert(ManufacturerModel manufacturer)
-        {
+            string sqlDelete = "DELETE FROM Manufacturer WHERE Id = @Id";
             using (_connection)
             {
-                _connection.Query<ManufacturerModel>("SELECT * FROM Manufacturer");
+               return _connection.Execute(sqlDelete, manufacturer);
             }
         }
 
-        public void Update(ManufacturerModel model)
+        public IList<ManufacturerModel> GetAll()
         {
-            throw new NotImplementedException();
+            string sqlGetAll = "SELECT Id, Name FROM Manufacturer";
+            using (_connection)
+            {
+                return _connection.Query<ManufacturerModel>(sqlGetAll).ToList();
+                
+            }
+        }
+
+        public int Insert(ManufacturerModel manufacturer)
+        {
+            string sqlInsert = "INSERT INTO Manufacturer (Id, Name) Values (@Id, @Name)";
+            using (_connection)
+            {
+                return _connection.Execute(sqlInsert,manufacturer);
+            }
+        }
+
+        public int Update(ManufacturerModel manufacturer)
+        {
+            string sqlUpdate = "UPDATE Manufacturer SET Name = @Name WHERE Id = @Id";
+            using (_connection)
+            {
+                return _connection.Execute(sqlUpdate, manufacturer);
+            }
         }
     }
 }

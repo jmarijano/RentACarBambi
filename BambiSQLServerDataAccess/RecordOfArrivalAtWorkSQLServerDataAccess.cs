@@ -10,22 +10,22 @@ namespace BambiSQLServerDataAccess
 {
     public class RecordOfArrivalAtWorkSQLServerDataAccess : IRecordOfArrivalAtWorkRepository
     {
-        public void Delete(RecordOfArrivalAtWorkModel model)
+        public int Delete(RecordOfArrivalAtWorkModel model)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<RecordOfArrivalAtWorkModel> GetAll()
+        public IList<RecordOfArrivalAtWorkModel> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(RecordOfArrivalAtWorkModel model)
+        public int Insert(RecordOfArrivalAtWorkModel model)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(RecordOfArrivalAtWorkModel model)
+        public int Update(RecordOfArrivalAtWorkModel model)
         {
             throw new NotImplementedException();
         }

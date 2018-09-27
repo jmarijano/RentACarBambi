@@ -10,22 +10,22 @@ namespace BambiSQLServerDataAccess
 {
     public class TownSQLServerDataAccess : ITownRepository
     {
-        public void Delete(TownModel model)
+        public int Delete(TownModel model)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<TownModel> GetAll()
+        public IList<TownModel> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(TownModel model)
+        public int Insert(TownModel model)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(TownModel model)
+        public int Update(TownModel model)
         {
             throw new NotImplementedException();
         }

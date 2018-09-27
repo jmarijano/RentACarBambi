@@ -9,10 +9,10 @@ namespace BambiDataAccess
 {
     public interface IBillRepository
     {
-        void Insert(BillModel model);
-        void Update(BillModel model);
-        void Delete(BillModel model);
-        IEnumerable<BillModel> GetAll();
+        int Insert(BillModel model);
+        int Update(BillModel model);
+        int Delete(BillModel model);
+        IList<BillModel> GetAll();
 
     }
 }

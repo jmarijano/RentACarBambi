@@ -10,22 +10,22 @@ namespace BambiSQLServerDataAccess
 {
     public class EngineTypeSQLServerDataAccess : IEngineTypeRepository
     {
-        public void Delete(EngineTypeModel model)
+        public int Delete(EngineTypeModel model)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<EngineTypeModel> GetAll()
+        public IList<EngineTypeModel> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(EngineTypeModel model)
+        public int Insert(EngineTypeModel model)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(EngineTypeModel model)
+        public int Update(EngineTypeModel model)
         {
             throw new NotImplementedException();
         }

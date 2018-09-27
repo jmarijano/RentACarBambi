@@ -10,9 +10,9 @@ namespace BambiDataAccess
     public interface IManufacturerRepository
     {
 
-        void Insert(ManufacturerModel model);
-        void Update(ManufacturerModel model);
-        void Delete(ManufacturerModel model);
-        IEnumerable<ManufacturerModel> GetAll();
+        int Insert(ManufacturerModel model);
+        int Update(ManufacturerModel model);
+        int Delete(ManufacturerModel model);
+        IList<ManufacturerModel> GetAll();
     }
 }

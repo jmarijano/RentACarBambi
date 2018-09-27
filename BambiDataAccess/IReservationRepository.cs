@@ -10,9 +10,9 @@ namespace BambiDataAccess
     public interface IReservationRepository
     {
 
-        void Insert(ReservationModel model);
-        void Update(ReservationModel model);
-        void Delete(ReservationModel model);
-        IEnumerable<ReservationModel> GetAll();
+        int Insert(ReservationModel model);
+        int Update(ReservationModel model);
+        int Delete(ReservationModel model);
+        IList<ReservationModel> GetAll();
     }
 }

@@ -10,9 +10,9 @@ namespace BambiDataAccess
     public interface IModelOfProductionRepository
     {
 
-        void Insert(ModelOfProductionModel model);
-        void Update(ModelOfProductionModel model);
-        void Delete(ModelOfProductionModel model);
-        IEnumerable<ModelOfProductionModel> GetAll();
+        int Insert(ModelOfProductionModel model);
+        int Update(ModelOfProductionModel model);
+        int Delete(ModelOfProductionModel model);
+        IList<ModelOfProductionModel> GetAll();
     }
 }

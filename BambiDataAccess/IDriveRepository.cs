@@ -10,9 +10,9 @@ namespace BambiDataAccess
     public interface IDriveRepository
     {
 
-        void Insert(DriveModel model);
-        void Update(DriveModel model);
-        void Delete(DriveModel model);
-        IEnumerable<DriveModel> GetAll();
+        int Insert(DriveModel model);
+        int Update(DriveModel model);
+        int Delete(DriveModel model);
+        IList<DriveModel> GetAll();
     }
 }

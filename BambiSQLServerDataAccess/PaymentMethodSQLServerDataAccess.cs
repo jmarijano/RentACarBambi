@@ -10,22 +10,22 @@ namespace BambiSQLServerDataAccess
 {
     public class PaymentMethodSQLServerDataAccess : IPaymentMethodRepository
     {
-        public void Delete(PaymentMethodModel model)
+        public int Delete(PaymentMethodModel model)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<PaymentMethodModel> GetAll()
+        public IList<PaymentMethodModel> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(PaymentMethodModel model)
+        public int Insert(PaymentMethodModel model)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(PaymentMethodModel model)
+        public int Update(PaymentMethodModel model)
         {
             throw new NotImplementedException();
         }

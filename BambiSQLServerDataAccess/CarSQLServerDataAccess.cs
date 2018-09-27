@@ -10,22 +10,22 @@ namespace BambiSQLServerDataAccess
 {
     public class CarSQLServerDataAccess : ICarRepository
     {
-        public void Delete(CarModel model)
+        public int Delete(CarModel model)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<CarModel> GetAll()
+        public IList<CarModel> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(CarModel model)
+        public int Insert(CarModel model)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(CarModel model)
+        public int Update(CarModel model)
         {
             throw new NotImplementedException();
         }

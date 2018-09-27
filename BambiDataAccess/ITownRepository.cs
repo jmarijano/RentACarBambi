@@ -10,9 +10,9 @@ namespace BambiDataAccess
     public interface ITownRepository
     {
 
-        void Insert(TownModel model);
-        void Update(TownModel model);
-        void Delete(TownModel model);
-        IEnumerable<TownModel> GetAll();
+        int Insert(TownModel model);
+        int Update(TownModel model);
+        int Delete(TownModel model);
+        IList<TownModel> GetAll();
     }
 }

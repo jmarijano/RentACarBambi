@@ -10,9 +10,9 @@ namespace BambiDataAccess
     public interface IInsuranceCompanyRepository
     {
 
-        void Insert(InsuranceCompanyModel model);
-        void Update(InsuranceCompanyModel model);
-        void Delete(InsuranceCompanyModel model);
-        IEnumerable<InsuranceCompanyModel> GetAll();
+        int Insert(InsuranceCompanyModel model);
+        int Update(InsuranceCompanyModel model);
+        int Delete(InsuranceCompanyModel model);
+        IList<InsuranceCompanyModel> GetAll();
     }
 }

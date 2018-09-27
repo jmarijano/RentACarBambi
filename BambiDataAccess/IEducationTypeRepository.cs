@@ -10,9 +10,9 @@ namespace BambiDataAccess
     public interface IEducationTypeRepository
     {
 
-        void Insert(EducationTypeModel model);
-        void Update(EducationTypeModel model);
-        void Delete(EducationTypeModel model);
-        IEnumerable<EducationTypeModel> GetAll();
+        int Insert(EducationTypeModel model);
+        int Update(EducationTypeModel model);
+        int Delete(EducationTypeModel model);
+        IList<EducationTypeModel> GetAll();
     }
 }

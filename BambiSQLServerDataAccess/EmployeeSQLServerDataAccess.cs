@@ -10,22 +10,22 @@ namespace BambiSQLServerDataAccess
 {
     public class EmployeeSQLServerDataAccess : IEmployeeRepository
     {
-        public void Delete(EmployeeModel model)
+        public int Delete(EmployeeModel model)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<EmployeeModel> GetAll()
+        public IList<EmployeeModel> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(EmployeeModel model)
+        public int Insert(EmployeeModel model)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(EmployeeModel model)
+        public int Update(EmployeeModel model)
         {
             throw new NotImplementedException();
         }

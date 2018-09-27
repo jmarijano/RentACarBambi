@@ -10,22 +10,22 @@ namespace BambiSQLServerDataAccess
 {
     public class EducationTypeSQLServerDataAccess : IEducationTypeRepository
     {
-        public void Delete(EducationTypeModel model)
+        public int Delete(EducationTypeModel model)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<EducationTypeModel> GetAll()
+        public IList<EducationTypeModel> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(EducationTypeModel model)
+        public int Insert(EducationTypeModel model)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(EducationTypeModel model)
+        public int Update(EducationTypeModel model)
         {
             throw new NotImplementedException();
         }

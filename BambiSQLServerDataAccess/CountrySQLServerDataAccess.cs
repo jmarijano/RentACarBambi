@@ -10,22 +10,22 @@ namespace BambiSQLServerDataAccess
 {
     public class CountrySQLServerDataAccess : ICountryRepository
     {
-        public void Delete(CountryModel model)
+        public int Delete(CountryModel model)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<CountryModel> GetAll()
+        public IList<CountryModel> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(CountryModel model)
+        public int Insert(CountryModel model)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(CountryModel model)
+        public int Update(CountryModel model)
         {
             throw new NotImplementedException();
         }

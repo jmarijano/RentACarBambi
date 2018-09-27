@@ -10,22 +10,22 @@ namespace BambiSQLServerDataAccess
 {
     public class InsuranceCompanySQLServerDataAccess : IInsuranceCompanyRepository
     {
-        public void Delete(InsuranceCompanyModel model)
+        public int Delete(InsuranceCompanyModel model)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<InsuranceCompanyModel> GetAll()
+        public IList<InsuranceCompanyModel> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(InsuranceCompanyModel model)
+        public int Insert(InsuranceCompanyModel model)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(InsuranceCompanyModel model)
+        public int Update(InsuranceCompanyModel model)
         {
             throw new NotImplementedException();
         }

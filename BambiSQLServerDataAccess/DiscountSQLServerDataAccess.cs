@@ -10,22 +10,22 @@ namespace BambiSQLServerDataAccess
 {
     public class DiscountSQLServerDataAccess : IDiscountRepository
     {
-        public void Delete(DiscountModel model)
+        public int Delete(DiscountModel model)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<DiscountModel> GetAll()
+        public IList<DiscountModel> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(DiscountModel model)
+        public int Insert(DiscountModel model)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(DiscountModel model)
+        public int Update(DiscountModel model)
         {
             throw new NotImplementedException();
         }

@@ -10,22 +10,22 @@ namespace BambiSQLServerDataAccess
 {
     public class ReservationSQLServerDataAccess : IReservationRepository
     {
-        public void Delete(ReservationModel model)
+        public int Delete(ReservationModel model)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<ReservationModel> GetAll()
+        public IList<ReservationModel> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(ReservationModel model)
+        public int Insert(ReservationModel model)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(ReservationModel model)
+        public int Update(ReservationModel model)
         {
             throw new NotImplementedException();
         }

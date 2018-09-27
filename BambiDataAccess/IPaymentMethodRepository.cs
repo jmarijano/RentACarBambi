@@ -10,9 +10,9 @@ namespace BambiDataAccess
     public interface IPaymentMethodRepository
     {
 
-        void Insert(PaymentMethodModel model);
-        void Update(PaymentMethodModel model);
-        void Delete(PaymentMethodModel model);
-        IEnumerable<PaymentMethodModel> GetAll();
+        int Insert(PaymentMethodModel model);
+        int Update(PaymentMethodModel model);
+        int Delete(PaymentMethodModel model);
+        IList<PaymentMethodModel> GetAll();
     }
 }

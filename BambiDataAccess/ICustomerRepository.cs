@@ -9,9 +9,9 @@ namespace BambiDataAccess
 {
     public interface ICustomerRepository
     {
-        void Insert(CustomerModel model);
-        void Update(CustomerModel model);
-        void Delete(CustomerModel model);
-        IEnumerable<CustomerModel> GetAll();
+        int Insert(CustomerModel model);
+        int Update(CustomerModel model);
+        int Delete(CustomerModel model);
+        IList<CustomerModel> GetAll();
     }
 }

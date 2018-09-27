@@ -10,12 +10,12 @@ namespace BambiSQLServerDataAccess
 {
     public class ClassSQLServerDataAccess : IClassRepository
     {
-        public void Delete(ClassModel model)
+        public int Delete(ClassModel model)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<ClassModel> GetAll()
+        public IList<ClassModel> GetAll()
         {
             throw new NotImplementedException();
         }
@@ -25,12 +25,12 @@ namespace BambiSQLServerDataAccess
             throw new NotImplementedException();
         }
 
-        public void Insert(ClassModel model)
+        public int Insert(ClassModel model)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(ClassModel model)
+        public int Update(ClassModel model)
         {
             throw new NotImplementedException();
         }

@@ -9,10 +9,10 @@ namespace BambiDataAccess
 {
     public interface IClassRepository
     {
-        void Insert(ClassModel model);
-        void Update(ClassModel model);
-        void Delete(ClassModel model);
-        IEnumerable<ClassModel> GetAll();
+        int Insert(ClassModel model);
+        int Update(ClassModel model);
+        int Delete(ClassModel model);
+        IList<ClassModel> GetAll();
         ClassModel GetClass(int Id);
     }
 }

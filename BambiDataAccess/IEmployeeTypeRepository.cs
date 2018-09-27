@@ -9,9 +9,9 @@ namespace BambiDataAccess
 {
     public interface IEmployeeTypeRepository
     {
-        void Insert(EmployeeTypeModel model);
-        void Update(EmployeeTypeModel model);
-        void Delete(EmployeeTypeModel model);
-        IEnumerable<EmployeeTypeModel> GetAll();
+        int Insert(EmployeeTypeModel model);
+        int Update(EmployeeTypeModel model);
+        int Delete(EmployeeTypeModel model);
+        IList<EmployeeTypeModel> GetAll();
     }
 }

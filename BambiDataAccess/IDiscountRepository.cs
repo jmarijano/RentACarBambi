@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 namespace BambiDataAccess
 {
     public interface IDiscountRepository
-    { 
-        void Insert(DiscountModel model);
-        void Update(DiscountModel model);
-        void Delete(DiscountModel model);
-        IEnumerable<DiscountModel> GetAll();
+    {
+        int Insert(DiscountModel model);
+        int Update(DiscountModel model);
+        int Delete(DiscountModel model);
+        IList<DiscountModel> GetAll();
     }
 }

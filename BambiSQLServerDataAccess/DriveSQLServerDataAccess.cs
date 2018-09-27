@@ -10,22 +10,22 @@ namespace BambiSQLServerDataAccess
 {
     public class DriveSQLServerDataAccess : IDriveRepository
     {
-        public void Delete(DriveModel model)
+        public int Delete(DriveModel model)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<DriveModel> GetAll()
+        public IList<DriveModel> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(DriveModel model)
+        public int Insert(DriveModel model)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(DriveModel model)
+        public int Update(DriveModel model)
         {
             throw new NotImplementedException();
         }

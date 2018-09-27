@@ -10,22 +10,22 @@ namespace BambiSQLServerDataAccess
 {
     public class ProfessionSQLServerDataAccess : IProfessionRepository
     {
-        public void Delete(ProfessionModel model)
+        public int Delete(ProfessionModel model)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<ProfessionModel> GetAll()
+        public IList<ProfessionModel> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(ProfessionModel model)
+        public int Insert(ProfessionModel model)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(ProfessionModel model)
+        public int Update(ProfessionModel model)
         {
             throw new NotImplementedException();
         }

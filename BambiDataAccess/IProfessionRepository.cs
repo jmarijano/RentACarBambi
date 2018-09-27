@@ -10,9 +10,9 @@ namespace BambiDataAccess
     public interface IProfessionRepository
     {
 
-        void Insert(ProfessionModel model);
-        void Update(ProfessionModel model);
-        void Delete(ProfessionModel model);
-        IEnumerable<ProfessionModel> GetAll();
+        int Insert(ProfessionModel model);
+        int Update(ProfessionModel model);
+        int Delete(ProfessionModel model);
+        IList<ProfessionModel> GetAll();
     }
 }

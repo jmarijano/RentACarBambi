@@ -10,22 +10,22 @@ namespace BambiSQLServerDataAccess
 {
     public class ModelOfProductionSQLServerDataAccess : IModelOfProductionRepository
     {
-        public void Delete(ModelOfProductionModel model)
+        public int Delete(ModelOfProductionModel model)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<ModelOfProductionModel> GetAll()
+        public IList<ModelOfProductionModel> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(ModelOfProductionModel model)
+        public int Insert(ModelOfProductionModel model)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(ModelOfProductionModel model)
+        public int Update(ModelOfProductionModel model)
         {
             throw new NotImplementedException();
         }

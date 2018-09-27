@@ -10,22 +10,22 @@ namespace BambiSQLServerDataAccess
 {
     public class BillSQLServerDataAccess : IBillRepository
     {
-        public void Delete(BillModel model)
+        public int Delete(BillModel model)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<BillModel> GetAll()
+        public IList<BillModel> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(BillModel model)
+        public int Insert(BillModel model)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(BillModel model)
+        public int Update(BillModel model)
         {
             throw new NotImplementedException();
         }

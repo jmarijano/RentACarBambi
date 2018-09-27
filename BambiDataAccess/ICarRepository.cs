@@ -9,9 +9,9 @@ namespace BambiDataAccess
 {
     public interface ICarRepository
     {
-        void Insert(CarModel model);
-        void Update(CarModel model);
-        void Delete(CarModel model);
-        IEnumerable<CarModel> GetAll();
+        int Insert(CarModel model);
+        int Update(CarModel model);
+        int Delete(CarModel model);
+        IList<CarModel> GetAll();
     }
 }

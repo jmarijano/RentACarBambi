@@ -10,22 +10,22 @@ namespace BambiSQLServerDataAccess
 {
     public class CustomerFeedbackSQLServerDataAccess : ICustomerFeedbackRepository
     {
-        public void Delete(CustomerFeedbackModel model)
+        public int Delete(CustomerFeedbackModel model)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<CustomerFeedbackModel> GetAll()
+        public IList<CustomerFeedbackModel> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(CustomerFeedbackModel model)
+        public int Insert(CustomerFeedbackModel model)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(CustomerFeedbackModel model)
+        public int Update(CustomerFeedbackModel model)
         {
             throw new NotImplementedException();
         }

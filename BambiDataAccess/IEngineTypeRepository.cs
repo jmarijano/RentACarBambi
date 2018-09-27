@@ -10,9 +10,9 @@ namespace BambiDataAccess
     public interface IEngineTypeRepository
     {
 
-        void Insert(EngineTypeModel model);
-        void Update(EngineTypeModel model);
-        void Delete(EngineTypeModel model);
-        IEnumerable<EngineTypeModel> GetAll();
+        int Insert(EngineTypeModel model);
+        int Update(EngineTypeModel model);
+        int Delete(EngineTypeModel model);
+        IList<EngineTypeModel> GetAll();
     }
 }

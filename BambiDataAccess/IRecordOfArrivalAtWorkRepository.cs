@@ -10,9 +10,9 @@ namespace BambiDataAccess
     public interface IRecordOfArrivalAtWorkRepository
     {
 
-        void Insert(RecordOfArrivalAtWorkModel model);
-        void Update(RecordOfArrivalAtWorkModel model);
-        void Delete(RecordOfArrivalAtWorkModel model);
-        IEnumerable<RecordOfArrivalAtWorkModel> GetAll();
+        int Insert(RecordOfArrivalAtWorkModel model);
+        int Update(RecordOfArrivalAtWorkModel model);
+        int Delete(RecordOfArrivalAtWorkModel model);
+        IList<RecordOfArrivalAtWorkModel> GetAll();
     }
 }

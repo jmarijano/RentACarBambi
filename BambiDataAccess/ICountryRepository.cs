@@ -9,9 +9,9 @@ namespace BambiDataAccess
 {
     public interface ICountryRepository
     {
-        void Insert(CountryModel model);
-        void Update(CountryModel model);
-        void Delete(CountryModel model);
-        IEnumerable<CountryModel> GetAll();
+        int Insert(CountryModel model);
+        int Update(CountryModel model);
+        int Delete(CountryModel model);
+        IList<CountryModel> GetAll();
     }
 }
