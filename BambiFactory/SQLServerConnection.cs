@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 
 namespace BambiFactory
 {
-    class SQLServerConnection : IDatabase
+    public class SQLServerConnection : IDatabase
     {
         private readonly string connectionString;
         public SQLServerConnection()
