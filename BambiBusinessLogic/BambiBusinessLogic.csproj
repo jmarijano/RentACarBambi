@@ -69,6 +69,10 @@
       <Project>{e5cb5e09-4cc3-4570-b33c-8d97907d45fa}</Project>
       <Name>BambiIBusinessLogic</Name>
     </ProjectReference>
+    <ProjectReference Include="..\BambiModels\BambiModels.csproj">
+      <Project>{ff16b7e5-f0b6-4d88-ac7e-2800fce158c6}</Project>
+      <Name>BambiModels</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
