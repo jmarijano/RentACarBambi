@@ -15,8 +15,13 @@ namespace BambiSQLServerDataAccess
     public class ManufacturerSQLServerDataAccess : IManufacturerRepository
     {
         private IDbConnection _connection;
-        
-        
+
+        public ManufacturerSQLServerDataAccess()
+            : this(new SQLServerConnection())
+        {
+
+        }
+
         public ManufacturerSQLServerDataAccess(IDatabase connection)
         {
             _connection = connection.CreateConnection();
@@ -27,7 +32,7 @@ namespace BambiSQLServerDataAccess
             string sqlDelete = "DELETE FROM Manufacturer WHERE Id = @Id";
             using (_connection)
             {
-               return _connection.Execute(sqlDelete, manufacturer);
+                return _connection.Execute(sqlDelete, manufacturer);
             }
         }
 
@@ -37,7 +42,7 @@ namespace BambiSQLServerDataAccess
             using (_connection)
             {
                 return _connection.Query<ManufacturerModel>(sqlGetAll).ToList();
-                
+
             }
         }
 
@@ -46,7 +51,7 @@ namespace BambiSQLServerDataAccess
             string sqlInsert = "INSERT INTO Manufacturer (Id, Name) Values (@Id, @Name)";
             using (_connection)
             {
-                return _connection.Execute(sqlInsert,manufacturer);
+                return _connection.Execute(sqlInsert, manufacturer);
             }
         }
 
