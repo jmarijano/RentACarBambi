@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BambiModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,9 @@ namespace BambiIBusinessLogic
 {
     public interface IEmployeeTypeBusinessLogic
     {
+        bool Insert(EmployeeTypeModel employeeType);
+        bool Update(EmployeeTypeModel employeeType);
+        bool Delete(EmployeeTypeModel employeeType);
+        IList<EmployeeTypeModel> GetAll();
     }
 }

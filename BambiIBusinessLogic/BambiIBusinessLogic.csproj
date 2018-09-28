@@ -64,5 +64,11 @@
     <Compile Include="ITownBusinessLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BambiModels\BambiModels.csproj">
+      <Project>{ff16b7e5-f0b6-4d88-ac7e-2800fce158c6}</Project>
+      <Name>BambiModels</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
