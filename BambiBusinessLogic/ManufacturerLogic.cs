@@ -1,5 +1,7 @@
-﻿using BambiIBusinessLogic;
+﻿using BambiDataAccess;
+using BambiIBusinessLogic;
 using BambiModels;
+using BambiSQLServerDataAccess;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,24 +12,35 @@ namespace BambiBusinessLogic
 {
     public class ManufacturerLogic : IManufacturerBusinessLogic
     {
+        private readonly IManufacturerRepository _manufacturerRepository;
+
+        public ManufacturerLogic()
+            : this(new ManufacturerSQLServerDataAccess())
+        {
+
+        }
+        public ManufacturerLogic(IManufacturerRepository manufacturerRepository)
+        {
+            _manufacturerRepository = manufacturerRepository;
+        }
         public bool Delete(ManufacturerModel manufacturer)
         {
-            throw new NotImplementedException();
+            return _manufacturerRepository.Delete(manufacturer) > 0 ? true : false;
         }
 
         public IList<ManufacturerModel> GetAll()
         {
-            throw new NotImplementedException();
+            return _manufacturerRepository.GetAll();
         }
 
         public bool Insert(ManufacturerModel manufacturer)
         {
-            throw new NotImplementedException();
+            return _manufacturerRepository.Insert(manufacturer) > 0 ? true : false;
         }
 
         public bool Update(ManufacturerModel manufacturer)
         {
-            throw new NotImplementedException();
+            return _manufacturerRepository.Update(manufacturer) > 0 ? true : false;
         }
     }
 }

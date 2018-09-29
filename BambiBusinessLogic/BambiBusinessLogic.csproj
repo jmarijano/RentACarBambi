@@ -65,6 +65,10 @@
     <Compile Include="TownLogic.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BambiDataAccess\BambiIDataAccess.csproj">
+      <Project>{06879483-080F-4EBE-A339-5FC2D693E40F}</Project>
+      <Name>BambiIDataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BambiIBusinessLogic\BambiIBusinessLogic.csproj">
       <Project>{e5cb5e09-4cc3-4570-b33c-8d97907d45fa}</Project>
       <Name>BambiIBusinessLogic</Name>
@@ -72,6 +76,10 @@
     <ProjectReference Include="..\BambiModels\BambiModels.csproj">
       <Project>{ff16b7e5-f0b6-4d88-ac7e-2800fce158c6}</Project>
       <Name>BambiModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BambiSQLServerDataAccess\BambiSQLServerDataAccess.csproj">
+      <Project>{43E9FF42-1C3A-4785-8243-710CE51B5C02}</Project>
+      <Name>BambiSQLServerDataAccess</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

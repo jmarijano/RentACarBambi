@@ -1,5 +1,7 @@
-﻿using BambiIBusinessLogic;
+﻿using BambiDataAccess;
+using BambiIBusinessLogic;
 using BambiModels;
+using BambiSQLServerDataAccess;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,24 +12,34 @@ namespace BambiBusinessLogic
 {
     public class EmployeeTypeLogic : IEmployeeTypeBusinessLogic
     {
+        private readonly IEmployeeTypeRepository _employeeTypeRepository;
+        public EmployeeTypeLogic()
+            : this(new EmployeeTypeSQLServerDataAccess())
+        {
+
+        }
+        public EmployeeTypeLogic(IEmployeeTypeRepository employeeTypeRepository)
+        {
+            _employeeTypeRepository = employeeTypeRepository;
+        }
         public bool Delete(EmployeeTypeModel employeeType)
         {
-            throw new NotImplementedException();
+            return _employeeTypeRepository.Delete(employeeType) > 0 ? true : false;
         }
 
         public IList<EmployeeTypeModel> GetAll()
         {
-            throw new NotImplementedException();
+            return _employeeTypeRepository.GetAll();
         }
 
         public bool Insert(EmployeeTypeModel employeeType)
         {
-            throw new NotImplementedException();
+            return _employeeTypeRepository.Insert(employeeType) > 0 ? true : false;
         }
 
         public bool Update(EmployeeTypeModel employeeType)
         {
-            throw new NotImplementedException();
+            return _employeeTypeRepository.Update(employeeType) > 0 ? true : false;
         }
     }
 }

@@ -1,5 +1,7 @@
-﻿using BambiIBusinessLogic;
+﻿using BambiDataAccess;
+using BambiIBusinessLogic;
 using BambiModels;
+using BambiSQLServerDataAccess;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,24 +12,34 @@ namespace BambiBusinessLogic
 {
     public class ProfessionLogic : IProfessionBusinessLogic
     {
+        private readonly IProfessionRepository _professionRepository;
+        public ProfessionLogic()
+            : this(new ProfessionSQLServerDataAccess())
+        {
+
+        }
+        public ProfessionLogic(IProfessionRepository professionRepository)
+        {
+            _professionRepository = professionRepository;
+        }
         public bool Delete(ProfessionModel profession)
         {
-            throw new NotImplementedException();
+            return _professionRepository.Delete(profession) > 0 ? true : false;
         }
 
         public IList<ProfessionModel> GetAll()
         {
-            throw new NotImplementedException();
+            return _professionRepository.GetAll();
         }
 
         public bool Insert(ProfessionModel profession)
         {
-            throw new NotImplementedException();
+            return _professionRepository.Insert(profession) > 0 ? true : false;
         }
 
         public bool Update(ProfessionModel profession)
         {
-            throw new NotImplementedException();
+            return _professionRepository.Update(profession) > 0 ? true : false;
         }
     }
 }

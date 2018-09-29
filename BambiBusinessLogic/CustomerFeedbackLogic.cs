@@ -1,5 +1,7 @@
-﻿using BambiIBusinessLogic;
+﻿using BambiDataAccess;
+using BambiIBusinessLogic;
 using BambiModels;
+using BambiSQLServerDataAccess;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,24 +12,34 @@ namespace BambiBusinessLogic
 {
     public class CustomerFeedbackLogic : ICustomerFeedbackBusinessLogic
     {
+        private readonly ICustomerFeedbackRepository _customerFeedbackRepository;
+        public CustomerFeedbackLogic()
+            : this(new CustomerFeedbackSQLServerDataAccess())
+        {
+
+        }
+        public CustomerFeedbackLogic(ICustomerFeedbackRepository customerFeedbackRepository)
+        {
+            _customerFeedbackRepository = customerFeedbackRepository;
+        }
         public bool Delete(CustomerFeedbackModel customerFeedback)
         {
-            throw new NotImplementedException();
+            return _customerFeedbackRepository.Delete(customerFeedback) > 0 ? true : false;
         }
 
         public IList<CustomerFeedbackModel> GetAll()
         {
-            throw new NotImplementedException();
+            return _customerFeedbackRepository.GetAll();
         }
 
         public bool Insert(CustomerFeedbackModel customerFeedback)
         {
-            throw new NotImplementedException();
+            return _customerFeedbackRepository.Insert(customerFeedback) > 0 ? true : false;
         }
 
         public bool Update(CustomerFeedbackModel customerFeedback)
         {
-            throw new NotImplementedException();
+            return _customerFeedbackRepository.Update(customerFeedback) > 0 ? true : false;
         }
     }
 }

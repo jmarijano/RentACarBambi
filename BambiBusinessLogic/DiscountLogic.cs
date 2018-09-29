@@ -1,5 +1,7 @@
-﻿using BambiIBusinessLogic;
+﻿using BambiDataAccess;
+using BambiIBusinessLogic;
 using BambiModels;
+using BambiSQLServerDataAccess;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,24 +12,35 @@ namespace BambiBusinessLogic
 {
     public class DiscountLogic : IDiscountBusinessLogic
     {
+        private readonly IDiscountRepository _discountRepository;
+
+        public DiscountLogic()
+            : this(new DiscountSQLServerDataAccess())
+        {
+
+        }
+        public DiscountLogic(IDiscountRepository discountRepository)
+        {
+            _discountRepository = discountRepository;
+        }
         public bool Delete(DiscountModel discount)
         {
-            throw new NotImplementedException();
+            return _discountRepository.Delete(discount) > 0 ? true : false;
         }
 
         public IList<DiscountModel> GetAll()
         {
-            throw new NotImplementedException();
+            return _discountRepository.GetAll();
         }
 
         public bool Insert(DiscountModel discount)
         {
-            throw new NotImplementedException();
+            return _discountRepository.Insert(discount) > 0 ? true : false;
         }
 
         public bool Update(DiscountModel discount)
         {
-            throw new NotImplementedException();
+            return _discountRepository.Update(discount) > 0 ? true : false;
         }
     }
 }

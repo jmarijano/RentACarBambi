@@ -1,5 +1,7 @@
-﻿using BambiIBusinessLogic;
+﻿using BambiDataAccess;
+using BambiIBusinessLogic;
 using BambiModels;
+using BambiSQLServerDataAccess;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,24 +12,34 @@ namespace BambiBusinessLogic
 {
     public class ReservationLogic : IReservationBusinessLogic
     {
+        private readonly IReservationRepository _reservationRepository;
+        public ReservationLogic()
+            : this(new ReservationSQLServerDataAccess())
+        {
+
+        }
+        public ReservationLogic(IReservationRepository reservationRepository)
+        {
+            _reservationRepository = reservationRepository;
+        }
         public bool Delete(ReservationModel reservation)
         {
-            throw new NotImplementedException();
+            return _reservationRepository.Delete(reservation) > 0 ? true : false;
         }
 
         public IList<ReservationModel> GetAll()
         {
-            throw new NotImplementedException();
+            return _reservationRepository.GetAll();
         }
 
         public bool Insert(ReservationModel reservation)
         {
-            throw new NotImplementedException();
+            return _reservationRepository.Insert(reservation) > 0 ? true : false;
         }
 
         public bool Update(ReservationModel reservation)
         {
-            throw new NotImplementedException();
+            return _reservationRepository.Update(reservation) > 0 ? true : false;
         }
     }
 }

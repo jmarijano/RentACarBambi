@@ -1,5 +1,7 @@
-﻿using BambiIBusinessLogic;
+﻿using BambiDataAccess;
+using BambiIBusinessLogic;
 using BambiModels;
+using BambiSQLServerDataAccess;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,24 +12,34 @@ namespace BambiBusinessLogic
 {
     public class EngineTypeLogic : IEngineTypeBusinessLogic
     {
+        private readonly IEngineTypeRepository _engineTypeRepository;
+        public EngineTypeLogic()
+            : this(new EngineTypeSQLServerDataAccess())
+        {
+
+        }
+        public EngineTypeLogic(IEngineTypeRepository engineTypeRepository)
+        {
+            _engineTypeRepository = engineTypeRepository;
+        }
         public bool Delete(EngineTypeModel engineType)
         {
-            throw new NotImplementedException();
+            return _engineTypeRepository.Delete(engineType) > 0 ? true : false;
         }
 
         public IList<EngineTypeModel> GetAll()
         {
-            throw new NotImplementedException();
+            return _engineTypeRepository.GetAll();
         }
 
         public bool Insert(EngineTypeModel engineType)
         {
-            throw new NotImplementedException();
+            return _engineTypeRepository.Insert(engineType) > 0 ? true : false;
         }
 
         public bool Update(EngineTypeModel engineType)
         {
-            throw new NotImplementedException();
+            return _engineTypeRepository.Update(engineType) > 0 ? true : false;
         }
     }
 }

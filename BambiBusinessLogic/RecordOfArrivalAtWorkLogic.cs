@@ -1,5 +1,7 @@
-﻿using BambiIBusinessLogic;
+﻿using BambiDataAccess;
+using BambiIBusinessLogic;
 using BambiModels;
+using BambiSQLServerDataAccess;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,25 +12,35 @@ namespace BambiBusinessLogic
 {
     public class RecordOfArrivalAtWorkLogic : IRecordOfArrivalAtWorkBusinessLogic
     {
+        private readonly IRecordOfArrivalAtWorkRepository _recordOfArrivalAtWorkRepository;
+
+        public RecordOfArrivalAtWorkLogic()
+            : this(new RecordOfArrivalAtWorkSQLServerDataAccess())
+        {
+
+        }
+        public RecordOfArrivalAtWorkLogic(IRecordOfArrivalAtWorkRepository recordOfArrivalAtWorkRepository)
+        {
+            _recordOfArrivalAtWorkRepository = recordOfArrivalAtWorkRepository;
+        }
         public bool Delete(RecordOfArrivalAtWorkModel recordOfArrivalAtWork)
         {
-            throw new NotImplementedException();
+            return _recordOfArrivalAtWorkRepository.Delete(recordOfArrivalAtWork) > 0 ? true : false;
         }
 
         public IList<RecordOfArrivalAtWorkModel> GetAll()
         {
-            throw new NotImplementedException();
+            return _recordOfArrivalAtWorkRepository.GetAll();
         }
 
         public bool Insert(RecordOfArrivalAtWorkModel recordOfArrivalAtWork)
         {
-            throw new NotImplementedException();
+            return _recordOfArrivalAtWorkRepository.Insert(recordOfArrivalAtWork) > 0 ? true : false;
         }
 
         public bool Update(RecordOfArrivalAtWorkModel recordOfArrivalAtWork)
         {
-            throw new NotImplementedException();
+            return _recordOfArrivalAtWorkRepository.Update(recordOfArrivalAtWork) > 0 ? true : false;
         }
     }
-
 }
