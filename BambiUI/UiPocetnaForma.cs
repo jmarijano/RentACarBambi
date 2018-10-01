@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BambiUI
 {
-    public partial class Form1 : Form
+    public partial class UiPocetnaForma : Form
     {
-        public Form1()
+        public UiPocetnaForma()
         {
             InitializeComponent();
         }
