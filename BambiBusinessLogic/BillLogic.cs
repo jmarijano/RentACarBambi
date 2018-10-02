@@ -10,6 +10,10 @@ using BambiSQLServerDataAccess;
 
 namespace BambiBusinessLogic
 {
+    /// <summary>
+    /// Bill business logic layer class which
+    /// implements IBillBusinessLogic interface.
+    /// </summary>
     public class BillLogic : IBillBusinessLogic
     {
         /// <summary>
