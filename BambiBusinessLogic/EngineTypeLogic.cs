@@ -10,6 +10,11 @@ using System.Threading.Tasks;
 
 namespace BambiBusinessLogic
 {
+    /// <summary>
+    /// Business logic class whose purpose is to handle 
+    /// data access for EngineType table. It implements
+    /// IEngineTypeBusinessLogic interface.
+    /// </summary>
     public class EngineTypeLogic : IEngineTypeBusinessLogic
     {
         private readonly IEngineTypeRepository _engineTypeRepository;
@@ -22,21 +27,54 @@ namespace BambiBusinessLogic
         {
             _engineTypeRepository = engineTypeRepository;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="engineType"></param>
+        /// <returns>
+        /// Returns true if the query is successfully executed
+        /// otherwise returns false.
+        /// </returns>
         public bool Delete(EngineTypeModel engineType)
         {
             return _engineTypeRepository.Delete(engineType) > 0 ? true : false;
         }
 
+        /// <summary>
+        /// Method whose purpose is to return all
+        /// engine type records from the database.
+        /// </summary>
+        /// <returns>
+        /// Returns all engine type objects as a IList
+        /// of EngineTypeModel objects.
+        /// </returns>
         public IList<EngineTypeModel> GetAll()
         {
             return _engineTypeRepository.GetAll();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="engineType"></param>
+        /// <returns>
+        /// Returns true if the query is successfully executed
+        /// otherwise returns false.
+        /// </returns>
         public bool Insert(EngineTypeModel engineType)
         {
             return _engineTypeRepository.Insert(engineType) > 0 ? true : false;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="engineType"></param>
+        /// <returns>
+        /// Returns true if the query is successfully executed
+        /// otherwise returns false.
+        /// </returns>
         public bool Update(EngineTypeModel engineType)
         {
             return _engineTypeRepository.Update(engineType) > 0 ? true : false;

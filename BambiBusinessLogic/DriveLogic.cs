@@ -35,7 +35,9 @@ namespace BambiBusinessLogic
         /// variable value. It's value is the same as the value
         /// of passed parameter.
         /// </summary>
-        /// <param name="driveRepository"></param>
+        /// <param name="driveRepository">
+        /// Existing IDriveRepository object.
+        /// </param>
         public DriveLogic(IDriveRepository driveRepository)
         {
             _driveRepository = driveRepository;
