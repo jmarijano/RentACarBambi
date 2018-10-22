@@ -19,20 +19,35 @@ namespace BambiBusinessLogic
     {
         private readonly IInsuranceCompanyRepository _insuranceCompanyRepository;
 
+        /// <summary>
+        /// Constructor whose purpose is to create
+        /// a new InsuranceCompanySQLServerDataAccess object.
+        /// </summary>
         public InsuranceCompanyLogic()
             : this(new InsuranceCompanySQLServerDataAccess())
         {
 
         }
+
+        /// <summary>
+        /// Constructor whose purpose is to 
+        /// set _insuranceCompanyRepository variable.
+        /// </summary>
+        /// <param name="insuranceCompanyRepository">
+        /// Existing IInsuranceCompanyRepository object.
+        /// </param>
         public InsuranceCompanyLogic(IInsuranceCompanyRepository insuranceCompanyRepository)
         {
             _insuranceCompanyRepository = insuranceCompanyRepository;
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to delete
+        /// InsuranceCompany record.
         /// </summary>
-        /// <param name="insuranceCompany"></param>
+        /// <param name="insuranceCompany">
+        /// Existing InsuranceCompanyModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.
@@ -56,9 +71,12 @@ namespace BambiBusinessLogic
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to insert
+        /// a new InsuranceCompany object.
         /// </summary>
-        /// <param name="insuranceCompany"></param>
+        /// <param name="insuranceCompany">
+        /// Existing InsuranceCompanyModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.
@@ -69,9 +87,12 @@ namespace BambiBusinessLogic
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to update 
+        /// a new InsuranceCompany record.
         /// </summary>
-        /// <param name="insuranceCompany"></param>
+        /// <param name="insuranceCompany">
+        /// Existing InsuranceCompanyModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.

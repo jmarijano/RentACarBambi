@@ -18,20 +18,36 @@ namespace BambiBusinessLogic
     public class TownLogic : ITownBusinessLogic
     {
         private readonly ITownRepository _townRepository;
+
+        /// <summary>
+        /// Constructor whose purpose is to create a new
+        /// TownSQLServerDataAccess for the next constructor.
+        /// </summary>
         public TownLogic()
             : this(new TownSQLServerDataAccess())
         {
 
         }
+
+        /// <summary>
+        /// Constructor whose purpose is 
+        /// to set _townRepository variable.
+        /// </summary>
+        /// <param name="townRepository">
+        /// Existing ITownRepository object.
+        /// </param>
         public TownLogic(ITownRepository townRepository)
         {
             _townRepository = townRepository;
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to delete an existing
+        /// town from the database.
         /// </summary>
-        /// <param name="town"></param>
+        /// <param name="town">
+        /// Existing TownModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.
@@ -55,9 +71,12 @@ namespace BambiBusinessLogic
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to insert a 
+        /// new town in the database.
         /// </summary>
-        /// <param name="town"></param>
+        /// <param name="town">
+        /// Newly created TownModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.
@@ -68,9 +87,12 @@ namespace BambiBusinessLogic
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to update an existing
+        /// town in the database.
         /// </summary>
-        /// <param name="town"></param>
+        /// <param name="town">
+        /// Existing TownModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.

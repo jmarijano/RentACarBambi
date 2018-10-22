@@ -18,20 +18,36 @@ namespace BambiBusinessLogic
     public class ModelOfProductionLogic : IModelOfProductionBusinessLogic
     {
         private readonly IModelOfProductionRepository _modelOfProductionRepository;
+
+        /// <summary>
+        /// Constructor whose purpose is to create a 
+        /// new ModelOfProductionSQLServerDataAccess object.
+        /// </summary>
         public ModelOfProductionLogic()
             : this(new ModelOfProductionSQLServerDataAccess())
         {
 
         }
+
+        /// <summary>
+        /// Constructor whose purpose is to set
+        /// _modelOfProductionRepository variable.
+        /// </summary>
+        /// <param name="modelOfProductionRepository">
+        /// Existing IModelOfProductionRepository object.
+        /// </param>
         public ModelOfProductionLogic(IModelOfProductionRepository modelOfProductionRepository)
         {
             _modelOfProductionRepository = modelOfProductionRepository;
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to delete
+        /// an existing ModelOfProduction object.
         /// </summary>
-        /// <param name="modelOfProduction"></param>
+        /// <param name="modelOfProduction">
+        /// Existing ModelOfProductionModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.
@@ -55,9 +71,12 @@ namespace BambiBusinessLogic
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to insert
+        /// a new ModelOfProduction record.
         /// </summary>
-        /// <param name="modelOfProduction"></param>
+        /// <param name="modelOfProduction">
+        /// Newly created ModelOfProductionModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.
@@ -68,9 +87,12 @@ namespace BambiBusinessLogic
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to update
+        /// an existing ModelOfProduction record.
         /// </summary>
-        /// <param name="modelOfProduction"></param>
+        /// <param name="modelOfProduction">
+        /// Existing ModelOfProductionModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.

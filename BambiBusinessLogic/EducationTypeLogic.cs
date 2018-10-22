@@ -74,9 +74,12 @@ namespace BambiBusinessLogic
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to insert a new
+        /// EducationType record.
         /// </summary>
-        /// <param name="educationType"></param>
+        /// <param name="educationType">
+        /// Newly created EducationTypeModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.
@@ -87,9 +90,12 @@ namespace BambiBusinessLogic
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to update
+        /// an existing EducationType record.
         /// </summary>
-        /// <param name="educationType"></param>
+        /// <param name="educationType">
+        /// Existing EducationTypeModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.

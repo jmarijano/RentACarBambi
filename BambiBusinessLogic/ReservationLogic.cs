@@ -18,20 +18,36 @@ namespace BambiBusinessLogic
     public class ReservationLogic : IReservationBusinessLogic
     {
         private readonly IReservationRepository _reservationRepository;
+
+        /// <summary>
+        /// Constructor whose purpose is to create a new
+        /// ReservationSQLServerDataAccess object.
+        /// </summary>
         public ReservationLogic()
             : this(new ReservationSQLServerDataAccess())
         {
 
         }
+
+        /// <summary>
+        /// Constructor whose purpose is 
+        /// to set _reservationRepository variable. 
+        /// </summary>
+        /// <param name="reservationRepository">
+        /// Existing IReservationRepository object.
+        /// </param>
         public ReservationLogic(IReservationRepository reservationRepository)
         {
             _reservationRepository = reservationRepository;
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to delete an existing
+        /// reservation from the database
         /// </summary>
-        /// <param name="reservation"></param>
+        /// <param name="reservation">
+        /// Existing ReservationModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.
@@ -55,9 +71,12 @@ namespace BambiBusinessLogic
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to insert
+        /// a new reservation in the database.
         /// </summary>
-        /// <param name="reservation"></param>
+        /// <param name="reservation">
+        /// Newly created ReservationModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.
@@ -68,9 +87,12 @@ namespace BambiBusinessLogic
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to update an existing
+        /// ReservationModel object.
         /// </summary>
-        /// <param name="reservation"></param>
+        /// <param name="reservation">
+        /// Existing ReservationModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.

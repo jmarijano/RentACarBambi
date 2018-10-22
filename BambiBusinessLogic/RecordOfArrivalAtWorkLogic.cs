@@ -19,20 +19,36 @@ namespace BambiBusinessLogic
     {
         private readonly IRecordOfArrivalAtWorkRepository _recordOfArrivalAtWorkRepository;
 
+        /// <summary>
+        /// Constructor whose purpose is to create
+        /// a new RecordOfArrivalAtWorkSQLServerDataAccess object.
+        /// </summary>
         public RecordOfArrivalAtWorkLogic()
             : this(new RecordOfArrivalAtWorkSQLServerDataAccess())
         {
 
         }
+
+        /// <summary>
+        /// Constructor whose purpose is to
+        /// set _recordOfArrivalAtWorkRepository variable.
+        /// </summary>
+        /// <param name="recordOfArrivalAtWorkRepository">
+        /// Existing IRecordOfArrivalAtWorkRepository object.
+        /// </param>
         public RecordOfArrivalAtWorkLogic(IRecordOfArrivalAtWorkRepository recordOfArrivalAtWorkRepository)
         {
             _recordOfArrivalAtWorkRepository = recordOfArrivalAtWorkRepository;
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to delete an existing 
+        /// RecordOfArrivalAtWork record from
+        /// the database.
         /// </summary>
-        /// <param name="recordOfArrivalAtWork"></param>
+        /// <param name="recordOfArrivalAtWork">
+        /// Existing RecordOfArrivalAtWorkModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.
@@ -57,9 +73,12 @@ namespace BambiBusinessLogic
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to create a new
+        /// RecordOfArrivalAtWork record.
         /// </summary>
-        /// <param name="recordOfArrivalAtWork"></param>
+        /// <param name="recordOfArrivalAtWork">
+        /// Newly created RecordOfArrivalAtWorkModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.
@@ -70,9 +89,12 @@ namespace BambiBusinessLogic
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to update an 
+        /// existing RecordOfArrivalAtWork record.
         /// </summary>
-        /// <param name="recordOfArrivalAtWork"></param>
+        /// <param name="recordOfArrivalAtWork">
+        /// Existing RecordOfArrivalAtWorkModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.

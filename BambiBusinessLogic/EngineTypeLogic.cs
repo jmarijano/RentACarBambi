@@ -18,20 +18,36 @@ namespace BambiBusinessLogic
     public class EngineTypeLogic : IEngineTypeBusinessLogic
     {
         private readonly IEngineTypeRepository _engineTypeRepository;
+
+        /// <summary>
+        /// Constructor whose purpose is to create
+        /// a new EngineTypeSQLServerDataAccess object.
+        /// </summary>
         public EngineTypeLogic()
             : this(new EngineTypeSQLServerDataAccess())
         {
 
         }
+
+        /// <summary>
+        /// Constructor whose purpose is to set 
+        /// _engineTypeRepository variable.
+        /// </summary>
+        /// <param name="engineTypeRepository">
+        /// Existing IEngineTypeRepository object.
+        /// </param>
         public EngineTypeLogic(IEngineTypeRepository engineTypeRepository)
         {
             _engineTypeRepository = engineTypeRepository;
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to delete
+        /// and existing EngineType object.
         /// </summary>
-        /// <param name="engineType"></param>
+        /// <param name="engineType">
+        /// Existing EngineTypeModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.
@@ -55,9 +71,12 @@ namespace BambiBusinessLogic
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to insert
+        /// a new EngineType record.
         /// </summary>
-        /// <param name="engineType"></param>
+        /// <param name="engineType">
+        /// Newly created EngineTypeModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.
@@ -68,9 +87,12 @@ namespace BambiBusinessLogic
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to update
+        /// an existing EngineType record.
         /// </summary>
-        /// <param name="engineType"></param>
+        /// <param name="engineType">
+        /// Existing EngineTypeModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.

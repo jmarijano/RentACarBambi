@@ -18,20 +18,36 @@ namespace BambiBusinessLogic
     public class EmployeeTypeLogic : IEmployeeTypeBusinessLogic
     {
         private readonly IEmployeeTypeRepository _employeeTypeRepository;
+
+        /// <summary>
+        /// Constructor whose purpose is to create
+        /// a new EmployeeTypeSQLServerDataAccess object.
+        /// </summary>
         public EmployeeTypeLogic()
             : this(new EmployeeTypeSQLServerDataAccess())
         {
 
         }
+
+        /// <summary>
+        /// Method whose purpose is to set 
+        /// _employeeTypeRepository variable.
+        /// </summary>
+        /// <param name="employeeTypeRepository">
+        /// Existing IEmployeeTypeRepository object.
+        /// </param>
         public EmployeeTypeLogic(IEmployeeTypeRepository employeeTypeRepository)
         {
             _employeeTypeRepository = employeeTypeRepository;
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to delete
+        /// an existing EmployeeType record.
         /// </summary>
-        /// <param name="employeeType"></param>
+        /// <param name="employeeType">
+        /// Existing EmployeeTypeModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.
@@ -55,9 +71,12 @@ namespace BambiBusinessLogic
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to insert a
+        /// new EmployeeType record.
         /// </summary>
-        /// <param name="employeeType"></param>
+        /// <param name="employeeType">
+        /// Existing EmployeeTypeModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.
@@ -68,9 +87,12 @@ namespace BambiBusinessLogic
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to update an
+        /// existing EmployeeType record.
         /// </summary>
-        /// <param name="employeeType"></param>
+        /// <param name="employeeType">
+        /// Existing EmployeeTypeModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.

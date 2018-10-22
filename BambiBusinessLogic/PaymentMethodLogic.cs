@@ -18,20 +18,36 @@ namespace BambiBusinessLogic
     public class PaymentMethodLogic : IPaymentMethodBusinessLogic
     {
         private readonly IPaymentMethodRepository _paymentMethodRepository;
+
+        /// <summary>
+        /// Constructor whose purpose is to create a 
+        /// new PaymentMethodSQLServerDataAccess object.
+        /// </summary>
         public PaymentMethodLogic()
             : this(new PaymentMethodSQLServerDataAccess())
         {
 
         }
+
+        /// <summary>
+        /// Constructor whose purpose is to
+        /// set _paymentMethodRepository variable.
+        /// </summary>
+        /// <param name="paymentMethodRepository">
+        /// Existing IPaymentMethodRepository object.
+        /// </param>
         public PaymentMethodLogic(IPaymentMethodRepository paymentMethodRepository)
         {
             _paymentMethodRepository = paymentMethodRepository;
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to delete
+        /// an existing PaymentMethod record.
         /// </summary>
-        /// <param name="paymentMethod"></param>
+        /// <param name="paymentMethod">
+        /// Existing PaymentMethodModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.
@@ -55,9 +71,12 @@ namespace BambiBusinessLogic
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to insert
+        /// a new PaymentMethod record.
         /// </summary>
-        /// <param name="paymentMethod"></param>
+        /// <param name="paymentMethod">
+        /// Newly created PaymentMethodModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.
@@ -68,9 +87,12 @@ namespace BambiBusinessLogic
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to update an
+        /// existing PaymentMethod record.
         /// </summary>
-        /// <param name="paymentMethod"></param>
+        /// <param name="paymentMethod">
+        /// Existing PaymentMethodModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.

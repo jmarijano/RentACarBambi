@@ -18,20 +18,36 @@ namespace BambiBusinessLogic
     public class ProfessionLogic : IProfessionBusinessLogic
     {
         private readonly IProfessionRepository _professionRepository;
+
+        /// <summary>
+        /// Constructor whose purpose is to create
+        /// a new ProfessionSQLServerDataAccess object.
+        /// </summary>
         public ProfessionLogic()
             : this(new ProfessionSQLServerDataAccess())
         {
 
         }
+
+        /// <summary>
+        /// Constructor whose purpose is
+        /// to set _professionRepository variable.
+        /// </summary>
+        /// <param name="professionRepository">
+        /// Existing IProfessionRepository object.
+        /// </param>
         public ProfessionLogic(IProfessionRepository professionRepository)
         {
             _professionRepository = professionRepository;
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to delete an existing
+        /// profession record from the database
         /// </summary>
-        /// <param name="profession"></param>
+        /// <param name="profession">
+        /// Existing ProfessionModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.
@@ -55,9 +71,12 @@ namespace BambiBusinessLogic
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to 
+        /// insert a new ProfessionModel record.
         /// </summary>
-        /// <param name="profession"></param>
+        /// <param name="profession">
+        /// Newly created ProfessionModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.
@@ -68,9 +87,12 @@ namespace BambiBusinessLogic
         }
 
         /// <summary>
-        /// 
+        /// Method whose purpose is to update an existing
+        /// ProfessionModel record.
         /// </summary>
-        /// <param name="profession"></param>
+        /// <param name="profession">
+        /// Existing ProfessionModel object.
+        /// </param>
         /// <returns>
         /// Returns true if the query is successfully executed
         /// otherwise returns false.
