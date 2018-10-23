@@ -7,6 +7,9 @@ using System.Configuration;
 
 namespace BambiFactory
 {
+    /// <summary>
+    /// Manages connection strings.
+    /// </summary>
     public static class CnnString
     {
         /// <summary>

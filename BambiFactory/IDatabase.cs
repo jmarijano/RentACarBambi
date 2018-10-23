@@ -9,13 +9,20 @@ using System.Data;
 
 namespace BambiFactory
 {
+    
+    /// <summary>
+    /// Represents an apstract object whose purpose
+    /// is to establish database connection.
+    /// </summary>
     public interface IDatabase
     {
         /// <summary>
         /// Interface method that creates
         /// a connection to the database.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>
+        /// Returns IDbConnection object.
+        /// </returns>
         IDbConnection CreateConnection();
     }
 }
