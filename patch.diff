@@ -1,0 +1,759 @@
+From 44bd5657e7493507ffb55389f212bb3413d9714d Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Josip=20Marijanovi=C4=87?= <jmarijano@foi.hr>
+Date: Tue, 30 Oct 2018 16:31:18 +0100
+Subject: [PATCH] Added XML comment to remaining Business logic classes.
+
+---
+ .../IEmployeeTypeBusinessLogic.cs             | 51 +++++++++++++++++++
+ .../IEngineTypeBusinessLogic.cs               | 51 +++++++++++++++++++
+ .../IInsuranceCompanyBusinessLogic.cs         | 51 +++++++++++++++++++
+ .../IInsuranceCompanyLocationBusinessLogic.cs | 51 +++++++++++++++++++
+ .../IManufacturerBusinessLogic.cs             | 51 +++++++++++++++++++
+ .../IModelOfProductionBusinessLogic.cs        | 51 +++++++++++++++++++
+ .../IPaymentMethodBusinessLogic.cs            | 51 +++++++++++++++++++
+ .../IProfessionBusinessLogic.cs               | 51 +++++++++++++++++++
+ .../IRecordOfArrivalAtWorkBusinessLogic.cs    | 51 +++++++++++++++++++
+ .../IReservationBusinessLogic.cs              | 51 +++++++++++++++++++
+ BambiIBusinessLogic/ITownBusinessLogic.cs     | 51 +++++++++++++++++++
+ 11 files changed, 561 insertions(+)
+
+diff --git a/BambiIBusinessLogic/IEmployeeTypeBusinessLogic.cs b/BambiIBusinessLogic/IEmployeeTypeBusinessLogic.cs
+index 06bd405..325a45e 100644
+--- a/BambiIBusinessLogic/IEmployeeTypeBusinessLogic.cs
++++ b/BambiIBusinessLogic/IEmployeeTypeBusinessLogic.cs
+@@ -7,11 +7,62 @@ using System.Threading.Tasks;
+ 
+ namespace BambiIBusinessLogic
+ {
++
++    /// <summary>
++    /// Represents abstract object whose purpose 
++    /// is to call methods from data access layer classes
++    /// for EmployeeType table.
++    /// </summary>
+     public interface IEmployeeTypeBusinessLogic
+     {
++
++        /// <summary>
++        /// Calls data access layer method which inserts
++        /// new record in EmployeeType table.
++        /// </summary>
++        /// <param name="employeeType">
++        /// Newly created EmployeeTypeModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Insert(EmployeeTypeModel employeeType);
++
++        /// <summary>
++        /// Calls data access layer method which updates an
++        /// existing record in EmployeeType table.
++        /// </summary>
++        /// <param name="employeeType">
++        /// Existing EmployeeTypeModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Update(EmployeeTypeModel employeeType);
++
++        /// <summary>
++        /// Calls data access layer method which deletes an
++        /// existing record in EmployeeTypeModel table.
++        /// </summary>
++        /// <param name="employeeType">
++        /// Existing EmployeeType object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Delete(EmployeeTypeModel employeeType);
++
++        /// <summary>
++        /// Calls data access layer method which returns
++        /// all records from EmployeeType table.
++        /// </summary>
++        /// <returns>
++        /// Returns all records from EmployeeType table as a
++        /// IList of EmployeeTypeModel objects.
++        /// </returns>
+         IList<EmployeeTypeModel> GetAll();
+     }
+ }
+diff --git a/BambiIBusinessLogic/IEngineTypeBusinessLogic.cs b/BambiIBusinessLogic/IEngineTypeBusinessLogic.cs
+index e3cc13a..aaf48db 100644
+--- a/BambiIBusinessLogic/IEngineTypeBusinessLogic.cs
++++ b/BambiIBusinessLogic/IEngineTypeBusinessLogic.cs
+@@ -7,11 +7,62 @@ using System.Threading.Tasks;
+ 
+ namespace BambiIBusinessLogic
+ {
++
++    /// <summary>
++    /// Represents abstract object whose purpose 
++    /// is to call methods from data access layer classes
++    /// for EngineType table.
++    /// </summary>
+     public interface IEngineTypeBusinessLogic
+     {
++
++        /// <summary>
++        /// Calls data access layer method which inserts
++        /// new record in EngineType table.
++        /// </summary>
++        /// <param name="engineType">
++        /// Newly created EngineTypeModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Insert(EngineTypeModel engineType);
++
++        /// <summary>
++        /// Calls data access layer method which updates an
++        /// existing record in EngineType table.
++        /// </summary>
++        /// <param name="engineType">
++        /// Existing EngineTypeModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Update(EngineTypeModel engineType);
++
++        /// <summary>
++        /// Calls data access layer method which deletes an
++        /// existing record in EngineType table.
++        /// </summary>
++        /// <param name="engineType">
++        /// Existing EngineTypeModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Delete(EngineTypeModel engineType);
++
++        /// <summary>
++        /// Calls data access layer method which returns
++        /// all records from EngineType table.
++        /// </summary>
++        /// <returns>
++        /// Returns all records from EngineType table as a
++        /// IList of EngineTypeModel objects.
++        /// </returns>
+         IList<EngineTypeModel> GetAll();
+     }
+ }
+diff --git a/BambiIBusinessLogic/IInsuranceCompanyBusinessLogic.cs b/BambiIBusinessLogic/IInsuranceCompanyBusinessLogic.cs
+index 338225b..546933d 100644
+--- a/BambiIBusinessLogic/IInsuranceCompanyBusinessLogic.cs
++++ b/BambiIBusinessLogic/IInsuranceCompanyBusinessLogic.cs
+@@ -7,11 +7,62 @@ using System.Threading.Tasks;
+ 
+ namespace BambiIBusinessLogic
+ {
++
++    /// <summary>
++    /// Represents abstract object whose purpose 
++    /// is to call methods from data access layer classes
++    /// for InsuranceCompany table.
++    /// </summary>
+     public interface IInsuranceCompanyBusinessLogic
+     {
++
++        /// <summary>
++        /// Calls data access layer method which inserts
++        /// new record in InsuranceCompany table.
++        /// </summary>
++        /// <param name="insuranceCompany">
++        /// Newly created InsuranceCompanyModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Insert(InsuranceCompanyModel insuranceCompany);
++
++        /// <summary>
++        /// Calls data access layer method which updates an
++        /// existing record in InsuranceCompany table.
++        /// </summary>
++        /// <param name="insuranceCompany">
++        /// Existing InsuranceCompanyModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Update(InsuranceCompanyModel insuranceCompany);
++
++        /// <summary>
++        /// Calls data access layer method which deletes an
++        /// existing record in InsuranceCompany table.
++        /// </summary>
++        /// <param name="insuranceCompany">
++        /// Existing InsuranceCompanyModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Delete(InsuranceCompanyModel insuranceCompany);
++
++        /// <summary>
++        /// Calls data access layer method which returns
++        /// all records from InsuranceCompany table.
++        /// </summary>
++        /// <returns>
++        /// Returns all records from InsuranceCompany table as a 
++        /// IList of InsuranceCompanyModel objects.
++        /// </returns>
+         IList<InsuranceCompanyModel> GetAll();
+     }
+ }
+diff --git a/BambiIBusinessLogic/IInsuranceCompanyLocationBusinessLogic.cs b/BambiIBusinessLogic/IInsuranceCompanyLocationBusinessLogic.cs
+index 5f68621..50ea875 100644
+--- a/BambiIBusinessLogic/IInsuranceCompanyLocationBusinessLogic.cs
++++ b/BambiIBusinessLogic/IInsuranceCompanyLocationBusinessLogic.cs
+@@ -7,11 +7,62 @@ using System.Threading.Tasks;
+ 
+ namespace BambiIBusinessLogic
+ {
++
++    /// <summary>
++    /// Represents abstract object whose purpose 
++    /// is to call methods from data access layer classes
++    /// for InsuranceCompanyLocation table.
++    /// </summary>
+     public interface IInsuranceCompanyLocationBusinessLogic
+     {
++
++        /// <summary>
++        /// Calls data access layer method which inserts
++        /// new record in InsuranceCompanyLocation table.
++        /// </summary>
++        /// <param name="insuranceCompanyLocation">
++        /// Newly created InsuranceCompanyLocationModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Insert(InsuranceCompanyLocationModel insuranceCompanyLocation);
++
++        /// <summary>
++        /// Calls data access layer method which updates an
++        /// existing record in InsuranceCompanyLocation table.
++        /// </summary>
++        /// <param name="insuranceCompanyLocation">
++        /// Existing InsuranceCompanyLocationModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Update(InsuranceCompanyLocationModel insuranceCompanyLocation);
++
++        /// <summary>
++        /// Calls data access layer method which deletes an
++        /// existing record in InsuranceCompanyLocation table.
++        /// </summary>
++        /// <param name="insuranceCompanyLocation">
++        /// Existing InsuranceCompanyLocationModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Delete(InsuranceCompanyLocationModel insuranceCompanyLocation);
++
++        /// <summary>
++        /// Calls data access layer method which returns
++        /// all records from InsuranceCompanyLocation table.
++        /// </summary>
++        /// <returns>
++        /// Returns all records from InsuranceCompanyLocation table as a 
++        /// IList of InsuranceCompanyLocationModel objects.
++        /// </returns>
+         IList<InsuranceCompanyLocationModel> GetAll();
+     }
+ }
+diff --git a/BambiIBusinessLogic/IManufacturerBusinessLogic.cs b/BambiIBusinessLogic/IManufacturerBusinessLogic.cs
+index 1934629..9257243 100644
+--- a/BambiIBusinessLogic/IManufacturerBusinessLogic.cs
++++ b/BambiIBusinessLogic/IManufacturerBusinessLogic.cs
+@@ -7,11 +7,62 @@ using System.Threading.Tasks;
+ 
+ namespace BambiIBusinessLogic
+ {
++
++    /// <summary>
++    /// Represents abstract object whose purpose 
++    /// is to call methods from data access layer classes
++    /// for Manufacturer table.
++    /// </summary>
+     public interface IManufacturerBusinessLogic
+     {
++
++        /// <summary>
++        /// Calls data access layer method which inserts
++        /// new record in Manufacturer table.
++        /// </summary>
++        /// <param name="manufacturer">
++        /// Newly created ManufacturerModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Insert(ManufacturerModel manufacturer);
++
++        /// <summary>
++        /// Calls data access layer method which updates an
++        /// existing record in Manufacturer table.
++        /// </summary>
++        /// <param name="manufacturer">
++        /// Existing ManufacturerModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Update(ManufacturerModel manufacturer);
++
++        /// <summary>
++        /// Calls data access layer method which deletes an
++        /// existing record in Manufacturer table.
++        /// </summary>
++        /// <param name="manufacturer">
++        /// Existing ManufacturerModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Delete(ManufacturerModel manufacturer);
++
++        /// <summary>
++        /// Calls data access layer method which returns
++        /// all records from Manufacturer table.
++        /// </summary>
++        /// <returns>
++        /// Returns all records from Manufacturer table as a 
++        /// IList of ManufacturerModel objects.
++        /// </returns>
+         IList<ManufacturerModel> GetAll();
+     }
+ }
+diff --git a/BambiIBusinessLogic/IModelOfProductionBusinessLogic.cs b/BambiIBusinessLogic/IModelOfProductionBusinessLogic.cs
+index d291645..8fcf98f 100644
+--- a/BambiIBusinessLogic/IModelOfProductionBusinessLogic.cs
++++ b/BambiIBusinessLogic/IModelOfProductionBusinessLogic.cs
+@@ -7,11 +7,62 @@ using System.Threading.Tasks;
+ 
+ namespace BambiIBusinessLogic
+ {
++
++    /// <summary>
++    /// Represents abstract object whose purpose 
++    /// is to call methods from data access layer classes
++    /// for ModelOfProduction table.
++    /// </summary>
+     public interface IModelOfProductionBusinessLogic
+     {
++
++        /// <summary>
++        /// Calls data access layer method which inserts
++        /// new record in ModelOfProduction table.
++        /// </summary>
++        /// <param name="modelOfProduction">
++        /// Newly created ModelOfProductionModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Insert(ModelOfProductionModel modelOfProduction);
++
++        /// <summary>
++        /// Calls data access layer method which updates an
++        /// existing record in ModelOfProduction table.
++        /// </summary>
++        /// <param name="modelOfProduction">
++        /// Existing ModelOfProductionModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Update(ModelOfProductionModel modelOfProduction);
++
++        /// <summary>
++        /// Calls data access layer method which deletes an
++        /// existing record in ModelOfProduction table.
++        /// </summary>
++        /// <param name="modelOfProduction">
++        /// Existing ModelOfProductionModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Delete(ModelOfProductionModel modelOfProduction);
++
++        /// <summary>
++        /// Calls data access layer method which returns
++        /// all records from ModelOfProduction table.
++        /// </summary>
++        /// <returns>
++        /// Returns all records from ModelOfProduction table as a 
++        /// IList of ModelOfProductionModel objects.
++        /// </returns>
+         IList<ModelOfProductionModel> GetAll();
+     }
+ }
+diff --git a/BambiIBusinessLogic/IPaymentMethodBusinessLogic.cs b/BambiIBusinessLogic/IPaymentMethodBusinessLogic.cs
+index c329ad4..d8c688b 100644
+--- a/BambiIBusinessLogic/IPaymentMethodBusinessLogic.cs
++++ b/BambiIBusinessLogic/IPaymentMethodBusinessLogic.cs
+@@ -7,11 +7,62 @@ using System.Threading.Tasks;
+ 
+ namespace BambiIBusinessLogic
+ {
++
++    /// <summary>
++    /// Represents abstract object whose purpose 
++    /// is to call methods from data access layer classes
++    /// for PaymentMethod table.
++    /// </summary>
+     public interface IPaymentMethodBusinessLogic
+     {
++
++        /// <summary>
++        /// Calls data access layer method which inserts
++        /// new record in PaymentMethod table.
++        /// </summary>
++        /// <param name="paymentMethod">
++        /// Newly created PaymentMethodModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Insert(PaymentMethodModel paymentMethod);
++
++        /// <summary>
++        /// Calls data access layer method which updates an
++        /// existing record in PaymentMethod table.
++        /// </summary>
++        /// <param name="paymentMethod">
++        /// Existing PaymentMethodModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Update(PaymentMethodModel paymentMethod);
++
++        /// <summary>
++        /// Calls data access layer method which deletes an
++        /// existing record in PaymentMethod table.
++        /// </summary>
++        /// <param name="paymentMethod">
++        /// Existing PaymentMethodModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Delete(PaymentMethodModel paymentMethod);
++
++        /// <summary>
++        /// Calls data access layer method which returns
++        /// all records from PaymentMethod table.
++        /// </summary>
++        /// <returns>
++        /// Returns all records from PaymentMethod table as a 
++        /// IList of PaymentMethodModel objects.
++        /// </returns>
+         IList<PaymentMethodModel> GetAll();
+     }
+ }
+diff --git a/BambiIBusinessLogic/IProfessionBusinessLogic.cs b/BambiIBusinessLogic/IProfessionBusinessLogic.cs
+index cfbe66f..63a7c1f 100644
+--- a/BambiIBusinessLogic/IProfessionBusinessLogic.cs
++++ b/BambiIBusinessLogic/IProfessionBusinessLogic.cs
+@@ -7,11 +7,62 @@ using System.Threading.Tasks;
+ 
+ namespace BambiIBusinessLogic
+ {
++
++    /// <summary>
++    /// Represents abstract object whose purpose 
++    /// is to call methods from data access layer classes
++    /// for Profession table.
++    /// </summary>
+     public interface IProfessionBusinessLogic
+     {
++
++        /// <summary>
++        /// Calls data access layer method which inserts
++        /// new record in Profession table.
++        /// </summary>
++        /// <param name="profession">
++        /// Newly created ProfesionModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Insert(ProfessionModel profession);
++
++        /// <summary>
++        /// Calls data access layer method which updates an
++        /// existing record in Profession table.
++        /// </summary>
++        /// <param name="profession">
++        /// Existing ProfesionModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Update(ProfessionModel profession);
++
++        /// <summary>
++        /// Calls data access layer method which deletes an
++        /// existing record in Profession table.
++        /// </summary>
++        /// <param name="profession">
++        /// Existing ProfesionModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Delete(ProfessionModel profession);
++
++        /// <summary>
++        /// Calls data access layer method which returns
++        /// all records from Profession table.
++        /// </summary>
++        /// <returns>
++        /// Returns all records from ProfessionM table as a 
++        /// IList of ProfessionModel objects.
++        /// </returns>
+         IList<ProfessionModel> GetAll();
+     }
+ }
+diff --git a/BambiIBusinessLogic/IRecordOfArrivalAtWorkBusinessLogic.cs b/BambiIBusinessLogic/IRecordOfArrivalAtWorkBusinessLogic.cs
+index c27a37f..1cdc67a 100644
+--- a/BambiIBusinessLogic/IRecordOfArrivalAtWorkBusinessLogic.cs
++++ b/BambiIBusinessLogic/IRecordOfArrivalAtWorkBusinessLogic.cs
+@@ -7,11 +7,62 @@ using System.Threading.Tasks;
+ 
+ namespace BambiIBusinessLogic
+ {
++
++    /// <summary>
++    /// Represents abstract object whose purpose 
++    /// is to call methods from data access layer classes
++    /// for RecordOfArrivalAtWork table.
++    /// </summary>
+     public interface IRecordOfArrivalAtWorkBusinessLogic
+     {
++
++        /// <summary>
++        /// Calls data access layer method which inserts
++        /// new record in RecordOfArrivalAtWork table.
++        /// </summary>
++        /// <param name="recordOfArrivalAtWork">
++        /// Newly created RecordOfArrivalAtWorkModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Insert(RecordOfArrivalAtWorkModel recordOfArrivalAtWork);
++
++        /// <summary>
++        /// Calls data access layer method which updates an
++        /// existing record in RecordOfArrivalAtWork table.
++        /// </summary>
++        /// <param name="recordOfArrivalAtWork">
++        /// Existing RecordOfArrivalAtWorkModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Update(RecordOfArrivalAtWorkModel recordOfArrivalAtWork);
++
++        /// <summary>
++        /// Calls data access layer method which deletes an
++        /// existing record in RecordOfArrivalAtWork table.
++        /// </summary>
++        /// <param name="recordOfArrivalAtWork">
++        /// Existing RecordOfArrivalAtWorkModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Delete(RecordOfArrivalAtWorkModel recordOfArrivalAtWork);
++
++        /// <summary>
++        /// Calls data access layer method which returns
++        /// all records from RecordOfArrivalAtWorkModel table.
++        /// </summary>
++        /// <returns>
++        /// Returns all records from RecordOfArrivalAtWork table as a 
++        /// IList of RecordOfArrivalAtWorkModel objects.
++        /// </returns>
+         IList<RecordOfArrivalAtWorkModel> GetAll();
+     }
+ }
+diff --git a/BambiIBusinessLogic/IReservationBusinessLogic.cs b/BambiIBusinessLogic/IReservationBusinessLogic.cs
+index de6a9c3..0b02089 100644
+--- a/BambiIBusinessLogic/IReservationBusinessLogic.cs
++++ b/BambiIBusinessLogic/IReservationBusinessLogic.cs
+@@ -7,11 +7,62 @@ using System.Threading.Tasks;
+ 
+ namespace BambiIBusinessLogic
+ {
++
++    /// <summary>
++    /// Represents abstract object whose purpose 
++    /// is to call methods from data access layer classes
++    /// for Reservation table.
++    /// </summary>
+     public interface IReservationBusinessLogic
+     {
++
++        /// <summary>
++        /// Calls data access layer method which inserts
++        /// new record in Reservation table.
++        /// </summary>
++        /// <param name="reservation">
++        /// Newly created ReservationModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Insert(ReservationModel reservation);
++
++        /// <summary>
++        /// Calls data access layer method which updates an
++        /// exsiting record in Reservation table.
++        /// </summary>
++        /// <param name="reservation">
++        /// Existing ReservationModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Update(ReservationModel reservation);
++
++        /// <summary>
++        /// Calls data access layer method which deletes an
++        /// existing record in Reservation table.
++        /// </summary>
++        /// <param name="reservation">
++        /// Existing ReservationModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Delete(ReservationModel reservation);
++
++        /// <summary>
++        /// Calls data access layer method which returns
++        /// all records from Reservation table.
++        /// </summary>
++        /// <returns>
++        /// Returns all records from Reservation table as a 
++        /// IList of ReservationModel objects.
++        /// </returns>
+         IList<ReservationModel> GetAll();
+     }
+ }
+diff --git a/BambiIBusinessLogic/ITownBusinessLogic.cs b/BambiIBusinessLogic/ITownBusinessLogic.cs
+index 432c67c..d0391eb 100644
+--- a/BambiIBusinessLogic/ITownBusinessLogic.cs
++++ b/BambiIBusinessLogic/ITownBusinessLogic.cs
+@@ -7,11 +7,62 @@ using System.Threading.Tasks;
+ 
+ namespace BambiIBusinessLogic
+ {
++
++    /// <summary>
++    /// Represents abstract object whose purpose 
++    /// is to call methods from data access layer classes
++    /// for Town table.
++    /// </summary>
+     public interface ITownBusinessLogic
+     {
++
++        /// <summary>
++        /// Calls data access layer method which inserts
++        /// new record in Town table.
++        /// </summary>
++        /// <param name="town">
++        /// Newly created TownModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Insert(TownModel town);
++
++        /// <summary>
++        /// Calls data access layer method which updates an
++        /// existing record in Town table.
++        /// </summary>
++        /// <param name="town">
++        /// Existing TownModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Update(TownModel town);
++
++        /// <summary>
++        /// Calls data access layer method which deletes an
++        /// existing record in Town table.
++        /// </summary>
++        /// <param name="town">
++        /// Existing TownModel object.
++        /// </param>
++        /// <returns>
++        /// Returns true if the query is successfully executed
++        /// otherwise returns false.
++        /// </returns>
+         bool Delete(TownModel town);
++
++        /// <summary>
++        /// Calls data access layer method which returns
++        /// all records from Town table.
++        /// </summary>
++        /// <returns>
++        /// Returns all records from Town table as a 
++        /// IList of TownModel objects.
++        /// </returns>
+         IList<TownModel> GetAll();
+     }
+ }
+-- 
+2.19.1.windows.1
+
